@@ -1,0 +1,82 @@
+.posters{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    transition: .5s ease;
+}
+
+.pages{
+        margin: 20px auto; 
+        width: 500px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+.page{
+        border: 1px solid lightgray;
+        border-radius: 100%;
+        padding: 5px 10px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+        
+  
+  .pages .page{
+      border: 1px solid lightgray;
+      border-radius: 100%;
+      padding: 5px 10px;
+      margin: 0 10px;
+      cursor: pointer;
+  }
+  
+  .pages .current-page{
+      border: 2px solid gray;
+      border-radius: 100%;
+      padding: 5px 10px;
+      margin: 0 10px;
+      cursor: pointer;
+  }
+  
+
+  .error{
+    width: 400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #51c4d3;
+    margin: 10px auto;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+
+    @media (max-width: 960px) {
+        .posters {
+          max-width: 800px;
+        }
+        .pages{
+            width: 100px;
+            margin-left: 50px;
+        }
+        .pages .page.number{
+          padding: 4px;
+        }
+      }
+      
+      @media (max-width: 700px) {
+        .posters {
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+        }
+        .pages{
+            display: none;
+        }
+      
+      }
+    
